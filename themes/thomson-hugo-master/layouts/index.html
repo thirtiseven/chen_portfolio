@@ -1,0 +1,214 @@
+{{ define "main" }}
+<!-- music -->
+<!-- <embed src="/Hope (MusicByTypto).mp3" loop="true" autostart="true" width="0" height="0"> -->
+<!-- Banner Start -->
+{{ if .Site.Data.homepage.banner.enable }}
+{{ with .Site.Data.homepage.banner }}
+<section class="section banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10">
+        <h2 class="cd-headline clip is-full-width mb-4 ">
+          {{ .title | markdownify }} <br>
+          <span class="cd-words-wrapper text-color">
+            {{ range $index, $element:= .animated_text }}
+            <b {{ if eq $index 0 }} class="is-visible" {{ end }}>{{ . | markdownify }}</b>
+            {{ end }}
+          </span>
+        </h2>
+        <p>{{ .content | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- Banner End -->
+<!-- Service start -->
+{{ if .Site.Data.homepage.service.enable }}
+{{ with .Site.Data.homepage.service }}
+<section class="section service-home border-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="mb-2 ">{{ .title | markdownify }}</h2>
+        <p class="mb-5">{{ .content | markdownify }}</p>
+      </div>
+    </div>
+
+    <div class="row">
+      {{ range .service_item }}
+      <div class="col-lg-4">
+        <div class="service-item mb-5">
+          <i class="{{ .icon }}"></i>
+          <h4 class="my-3">{{ .name | markdownify }}</h4>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- service end -->
+<!-- Introduct start -->
+<section class="section introduct  border-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2 class="mb-2 ">DAOSquare Community DAO</h2>
+        <p class="mb-5">DAOSquare Community DAO (DCD) is the core driver for the development of DAOSquare, but it is decentralized and open, everyone has the right to join and become the head. You can check the detailed introduction in our BLOG. There are six roles in DCD:
+        </p>
+      </div>
+      <div class="row " style="margin-bottom: 50px;">
+        <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <article>
+            <img class="card-img-top rounded-0"
+              src="/images/Tima.jpg"
+              alt="Tima">
+            <div class="card-body">
+              <h4 class="card-title">Tima<a href="https://themes.gohugo.io//theme/educenter-hugo/blog/blog-post-1/"></a>
+              </h4>
+              <p class="card-text">Tima is the incarnation of deity, a fusion of history and the future.</p>
+              <p class="card-text">He/she can tell you any historical experience, knowledge, and everything about the future. He/she is the spiritual leader of DAOSquare.</p>
+            </div>
+          </article>
+        </article>
+        <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <article>
+            <img class="card-img-top rounded-0"
+              src="/images/Knight.jpg"
+              alt="Dragon Knight">
+            <div class="card-body">
+              <h4 class="card-title">Dragon Knight<a href="https://themes.gohugo.io//theme/educenter-hugo/blog/blog-post-1/"></a>
+              </h4>
+              <p class="card-text">Dragon Knight is the warriors of DAO. They work in their respective territories and fight for DAO through their efforts.</p>
+              <p class="card-text">Of course, they often join DAO's round tables to discuss DAO's future with other roles.</p>
+            </div>
+          </article>
+        </article>
+        <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <article>
+            <img class="card-img-top rounded-0"
+              src="/images/Ninja.jpg"
+              alt="Elegant Light Box Paper Cut Dioramas">
+            <div class="card-body">
+              <h4 class="card-title">Ninja<a href="https://themes.gohugo.io//theme/educenter-hugo/blog/blog-post-1/"></a>
+              </h4>
+              <p class="card-text">Ninja rarely shows up, you can't feel him/her, but he/she is likely to be behind you...</p>
+              <p class="card-text">Once ninja shows up, there is bound to be something important or tricky. Only he/she can handle it. Of course, he/she can handle everything.</p>
+            </div>
+          </article>
+        </article>
+      </div>
+      <div class="row " style="margin-bottom: 50px;">
+        <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <article>
+            <img class="card-img-top rounded-0"
+              src="/images/Walker.jpg"
+              alt="Elegant Light Box Paper Cut Dioramas">
+            <div class="card-body">
+              <h4 class="card-title">Walker<a href="https://themes.gohugo.io//theme/educenter-hugo/blog/blog-post-1/"></a>
+              </h4>
+              <p class="card-text">Walker allways "walking". They link each role of the DAO and weave them into a strong and powerful net.</p>
+              <p class="card-text">And, even the most secretive ninjas, walkers can find them at any time.</p>
+            </div>
+          </article>
+        </article>
+        <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <article>
+            <img class="card-img-top rounded-0"
+              src="/images/Guardian.jpg"
+              alt="Elegant Light Box Paper Cut Dioramas">
+            <div class="card-body">
+              <h4 class="card-title">Guardian<a href="https://themes.gohugo.io//theme/educenter-hugo/blog/blog-post-1/"></a>
+              </h4>
+              <p class="card-text">At every step forward, the guardian is never absent. Guardian provides solid support for DAO by financial capital and social capital.</p>
+              <p class="card-text">On the other hand, DAO also bring rich harvest to the guardians.</p>
+            </div>
+          </article>
+        </article>
+        <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+          <article>
+            <img class="card-img-top rounded-0"
+              src="/images/Summoner.jpg"
+              alt="Elegant Light Box Paper Cut Dioramas">
+            <div class="card-body">
+              <h4 class="card-title">Summoner<a href="https://themes.gohugo.io//theme/educenter-hugo/blog/blog-post-1/"></a>
+              </h4>
+              <p class="card-text">Summoner is the wisher of DAO. He planted a seed and helped it thrive. This seed is DAO.</p>
+              <p class="card-text">Summoner builds DAO's original vision, mission, and values, and summons like-minded people. Summoner will never compromise until he dies.</p>
+            </div>
+          </article>
+        </article>
+      </div>
+      <div class="col-lg-8" >
+        <a class="btn btn-danger" href="https://pokemol.com/dao/0x1ba850cb53280d7f9987be283ff462038ec8abe2/members">MEET
+          OUR DAO MEMBERS</a>
+        <div style="margin-top: 20px;"><img src="/images/pokemol__brand.svg" class="img-responsive"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Introduct end -->
+<!-- Portfolio start -->
+{{ if .Site.Data.homepage.portfolio.enable }}
+<section class="section portfolio border-top">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-10">
+        <h2 class="mb-2 ">DAOSquare ecosystem & family</h2>
+        <p class="mb-5">There are some projects that we are incubating (ecosystem), and those families who have been
+          helping us.
+        </p>
+        <div class="btn-group btn-group-toggle " data-toggle="buttons">
+          <label class="btn active ">
+            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+          </label>
+          {{ $categories := slice }}
+          {{ range (where .Site.RegularPages "Type" "portfolio") }}
+          {{ $categories = $categories | append .Params.Category }}
+          {{ end }}
+          {{ range ( $categories | uniq ) }}
+          <label class="btn">
+            <input type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
+          </label>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
+    <div class="row shuffle-wrapper portfolio-gallery">
+      {{ range (where .Site.RegularPages "Type" "portfolio")}}
+      <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[&quot;{{ .Params.Category | urlize }}&quot;]">
+        <div class="position-relative inner-box">
+          <div class="image position-relative">
+            <img src="{{ .Params.Image | absURL }}" alt="portfolio-image" class="img-fluid w-100 d-block">
+            <div class="overlay-box">
+              <div class="overlay-inner">
+                <a class="overlay-content" href="{{ .Params.project_url }}" target="_Blank">
+                  <h5 class="mb-0">{{ .Title }}</h5>
+                  <p>{{ .Params.Category | humanize }}</p>
+                  <p>{{.Params.Description | humanize}}</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<section class="section quote">
+  <div class="container">
+    <div>
+      <h2 class="text-center ">"If you want to go fast, go alone. </h2>
+      <h2 class="text-center ">If you want to go far, go together"</h2>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- Portfolio End -->
+{{ end }}

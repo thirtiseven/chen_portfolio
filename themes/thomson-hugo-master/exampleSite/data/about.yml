@@ -1,0 +1,54 @@
+---
+author:
+  enable: true
+  image: "/images/about-img.png"
+  name: Join us
+  bio: All great innovation and social progress are born of madness.
+  content: We are mad guys, we are doing madness things. If you want to join us, please
+    make sure you are exited about what we are doing.
+  signature: images/signature.svg
+  favourite_topic:
+  - Community
+  - For-Profit DAO
+  - Incubator
+experience:
+  enable: true
+  title: What we are doing.
+  experience_item:
+  - name: Community building
+    duration: ''
+    content: We are summoning those who are enthusiastic, positive, fun, ingenious,
+      dare to think, dare to act, let's go to the crypto space together to find the
+      opportunity to succeed, to accomplish what everyone wants to do but has not
+      yet done.
+  - name: Media
+    duration: ''
+    content: We are building the best web3 content in Chinese world. Icluding translantion,
+      original (DAOSquare Crypto Stuff, Crypto Arts Weekly), potcast, interview (DAOmadness),
+      and more.
+  - name: MetaCartel Ventures China
+    duration: ''
+    content: The DAO-Driven VC focus on pre-seed round startups.
+  - name: Incubation projects
+    duration: ''
+    content: Use the social captal to incubate promising and valuable pre-seed round
+      projects, teams, and people.
+skill:
+  enable: true
+  title: Our Lego blocks.
+  skillbar:
+  - name: Writer
+    percentage: 92%
+  - name: Developer
+    percentage: 86%
+  - name: Artist
+    percentage: 90%
+  - name: Other
+    percentage: 87%
+cta:
+  enable: true
+  title: Big shout "Join" in our community
+  button:
+    enable: true
+    label: JOIN US
+    link: https://discord.com/invite/wtgQN5C

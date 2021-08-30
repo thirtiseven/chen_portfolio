@@ -1,0 +1,35 @@
+---
+banner:
+  enable: true
+  title: We are a
+  animated_text:
+  - Community.
+  - For-profit DAO.
+  - Incubator.
+  content: Those who are enthusiastic, positive, fun, ingenious, dare to think, dare
+    to act, let's go to the crypto space together to find the opportunity to succeed,
+    to accomplish what everyone wants to do but has not yet done.
+portfolio:
+  enable: true
+service:
+  enable: true
+  title: About DAOSquare
+  content: DAOSquare is born in the MetaCartel community. We are taking MetaCartel’s
+    spiritual culture to East, expand this amazing universe and create a great community
+    in East. We believe in the future of community-driven organizations especially
+    when it meets crypto.
+  service_item:
+  - name: Community
+    icon: ti-infinite
+    content: 'DAOSquare is a real crypto community, we are helping more people to
+      understand and join crypto space, and creat personal value and social value
+      together. '
+  - name: For-profit DAO
+    icon: ti-stats-up
+    content: We are realizing DAOs’s commercialize. Let more people see the feasibility
+      of DAO, and promote mass adoption in DAO.
+  - name: Incubator
+    icon: ti-rocket
+    content: We are helping more people use DAO/community-driven organizations to
+      launch their brands, businesses, and any valuable things, and support their
+      growth.
